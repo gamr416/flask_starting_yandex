@@ -21,6 +21,17 @@ def ads():
     И начнем с Марса!<br>
     Присоединяйся!<br>"""
 
-def
+
+@app.route('/image_mars')
+def image_mars():
+    return '''
+    <head><title>Привет, Марс!</title></head>
+    <h1>Жди нас, Марс!</h1>
+    <img src="static/assets/MARS.png" alt="здесь должна была быть картинка, но не нашлась">
+    </br>Вот она какая, красная планета.
+    '''
+
+
+
 if __name__ == '__main__':
     app.run(port=8080, host='127.0.0.1')
